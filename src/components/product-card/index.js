@@ -11,8 +11,10 @@ export default function ProductCard({ item }) {
       <CardContent>
         <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
           <Image
-            src={item.thumbnail}
-            alt={item.title}
+            src={item?.thumbnail}
+            alt={item?.title}
+            width={300}
+            height={300}
             className="h-full w-full object-cover object-top"
           />
         </div>

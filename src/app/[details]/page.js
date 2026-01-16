@@ -2,6 +2,7 @@ import { fetchProductDetails } from "@/actions";
 import AddToCartButton from "@/components/ui/add-to-cart-button";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import Image from "next/image";
 
 export default async function ProductDetails({ params }) {
   const getProductDetails = await fetchProductDetails(params.details);
