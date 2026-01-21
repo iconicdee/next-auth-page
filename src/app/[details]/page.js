@@ -18,6 +18,9 @@ export default async function ProductDetails({ params }) {
             <Image
               src={getProductDetails?.thumbnail}
               alt={getProductDetails?.title}
+              width={800}
+              height={600}
+              priority
               className="w-4/5 rounded object-cover"
             />
             <hr className="border-black border-2 my-6" />
@@ -28,6 +31,8 @@ export default async function ProductDetails({ params }) {
                     <Image
                       src={imageItem}
                       alt={getProductDetails?.title}
+                      width={96}
+                      height={96}
                       className="w-24 cursor-pointer"
                     />
                   </ul>
